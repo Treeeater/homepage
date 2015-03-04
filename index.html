@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Yuchen Zhou's research</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="header">
+		<div>
+			<a href="#" id="logo"><img src="images/logo.jpg" height="100" width="150" alt="logo" style="visibility:hidden;"></a>
+			<ul>
+				<li class="selected">
+					<a href="#">Research&nbsp;Homepage</a>
+				</li>
+				<li>
+					<a href="http://chromium.cs.virginia.edu">Personal&nbsp;Homepage</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="floater" class="fixed" style="visibility:hidden;">
+		<a href="javascript:void(0)" onclick="floater.style.visibility = 'hidden'"><img src="images/hide.png" height="20" style="float:right; margin-top:5px; margin-right:5px"/></a>
+		<ul>
+			<li>
+				<a href="#redactDOM">RedactDOM</a>
+			</li>
+			<li>
+				<a href="#ssoscan">SSOScan</a>
+			</li>
+			<li>
+				<a href="#explicatingSDKs">ExplicatingSDKs</a>
+			</li>
+			<li>
+				<a href="#unifying_policies">Unifying Policies</a>
+			</li>
+			<li>
+				<a href="#dominator">DOMinator</a>
+			</li>
+			<li>
+				<a href="#http-only">HTTP-only cookies</a>
+			</li>
+		</ul>
+	</div>
+	<div id="body" class="home">
+		<div class="blog">
+			<img src="images/profile.jpg" width="440" height="330" alt="">
+			<div>
+				<img src="images/name.png" width="330" height = "100" style="margin-top:-5px; margin-left:70px" alt="">
+				<h3><b>Senior Ph.D. student working with <a href="http://www.cs.virginia.edu/~evans">Prof. David Evans</a></b></h3>
+				<h4><b><a href="http://www.cpe.virginia.edu/">Computer Engineering</a><br/><a href="http://www.virginia.edu/">University of Virginia</a></b></h4>
+				<p style="color:red; font-size:20px"> I am graduating soon and looking for a job.</p>
+				<p style="color:red; font-size:20px"> <b>Resume</b> for <a href="Resume_Yuchen_Zhou_Research.pdf">Research positions</a></p>
+				<p style="color:red; font-size:20px">and <a href="Resume_Yuchen_Zhou.pdf">Developer/Industry positions</a>.</p>
+				<p style="color:red; font-size:20px"> <b>Research Statement</b> can be found <a href="rs_Yuchen_Zhou.pdf">here</a>.</p>
+				<p style="font-size:20px"><b><a href="https://www.linkedin.com/in/yuchenzhouUVa">Linkedin profile</a></b></p>
+				<p style="font-size:18px"><a href="https://github.com/Treeeater/">My Github Repo ("Treeeater")</a></p>
+			</div>
+		</div>
+		<hr style="margin-top:30px"/>		
+		<div class="news">			
+			<img src="oakland15/overview.png" width="356" alt="">
+			<div>
+				<h3><a name = "JSMonitor" href = "oakland15">Understanding and Monitoring Embedded Web Scripts</a><br/></h3>
+				<p>This project helps web developers understand and monitor the behavior of embedded third-party JavaScripts on their websites.  <br/> Our paper is accepted at Oakland (IEEE S&P) 2015', and more information can be found <a href="oakland15">here</a>.</p>
+			</div>
+		</div>
+		<div class="article">
+			<img src="ssoscan/systemStructure.png" width="295" alt="">
+			<div>
+				<h3><a name = "ssoscan" href = "http://www.ssoscan.org">SSOScan: Automated Testing of Web Applications for Single Sign-On Vulnerabilities</a></h3>
+				<p>
+					SSOScan is an automated scanner of web applications for Single Sign-On vulnerabilities.  Our paper is published at the 23rd USENIX Security Symoposium (2014), and more details can be found <a href="http://www.ssoscan.com">here</a>.
+				</p>
+			</div>
+		</div>
+		<div class="news">
+			<div>
+				<h3><a name = "explicatingSDKs" href = "explicatingSDKs/">Explicating SDKs: Uncovering Assumptions Underlying Secure Authentication and Authorization</a> <span style="font-size:16px"><br/>with <a href="http://research.microsoft.com/apps/pubs/default.aspx?id=188979">Rui Wang, Shuo Chen at Microsoft Research Redmond</a></span></h3>
+				<p>
+					The goal of Explicating SDKs project is to systematically uncover implicit assumptions that are important to applications' security properties, this work is published at the 22nd USENIX Security Symposium (2013).
+				</p>
+			</div>
+			<img src="explicatingSDKs/generalApproach.png" width="356" alt="">
+		</div>
+		<div class="article">
+			<div>
+				<h3><a name = "dominator" href = "dominator/">DOMinator: confine the behaviors of third-party JavaScripts</a></h3>
+				<p>
+					The goal of DOMinator is to build a browser that can enforce fine-grained access control policies for third-party JavaScripts.  This work is published at ESORICS 11'.
+				</p>
+			</div>
+			<img src="dominator/DOM.png" width="356" alt="">
+		</div>
+		<div class="news">
+			<img src="http-only/http-only.png" style="margin-top:50px" width="295" alt="">
+			<div>
+				<h3><a name = "http-only" href="http://www.cs.virginia.edu/~evans/pubs/w2sp2010/">Why Aren't HTTP-only Cookies More Widely Deployed?</a></h3>
+				<p>
+					This short paper is presented at W2SP 10' (co-hosted with Oakland 10'), we looked at the history and current status of how well HTTP-only cookies are deployed, and give some suggestions about how future security works can improve themselves to achieve a higher deploy rate.
+				</p>
+			</div>
+		</div>
+		<div class="article">
+			<div>
+				<h3><a name = "redactDOM" href = "redactDOM/">Poster: RedactDOM</a><br/> <span style="font-size:16px">with <a href="mailto:lc8dp@virginia.edu">Longze Chen</a></span></h3>
+				<p>
+					The goal of RedactDOM project is to prevent sensitive data leaking through embedded scripts, and <a id = "RedactDOM" href = "redactDOM/RedactDOM_Poster.pdf">our poster</a> appeared in IEEE S&P(Oakland) 13'.
+				</p>
+			</div>
+			<img src="redactDOM/redactDOM.png" width="356" alt="">
+		</div>
+		<div class="news">
+			<img src="unifying_policies/unifying_policies.png" width="295" alt="">
+			<div>
+				<h3><a name = "unifying_policies" href="unifying_policies/USENIX2011Poster.pdf">Poster: Unifying Data Policies Across the Client and Server</a><br/>with <a href="http://www.jburket.com/">Jonathan Burket et al.</a></h3>
+				<p>
+					This poster is presented at USENIX 11', the idea is to generate annotated policies automatically from server-side using <a href="http://jburket.com/GuardRails.pdf">GuardRails</a>, and enforce the access control policies at client side using <a href="dominator/">DOMinator</a>.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div>
+			<p style="width:99%; font-size:20px; margin:20px; text-align:center">
+				Last modified Nov 21st, 2014. by Yuchen Zhou
+			</p>
+		</div>
+	</div>
+</body>
+</html>
