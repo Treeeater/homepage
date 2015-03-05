@@ -8,4 +8,6 @@ class WelcomeController < ApplicationController
   end
   def research
   end
+  def life
+  end
 end

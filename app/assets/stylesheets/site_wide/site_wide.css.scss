@@ -26,9 +26,22 @@ textarea {
   }
 }
 
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
 div.profile_picture_container {
   width: 90%;
   margin: auto;
+}
+
+div.margTop{
+  margin-top:40px;  
+}
+
+h3{
+  text-align: center;
 }
 
 /* typography */

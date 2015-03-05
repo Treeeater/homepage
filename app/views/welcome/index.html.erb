@@ -1,17 +1,18 @@
 <% provide(:title, "Index Page") %>
-<% #provide(:specific_css, stylesheet_link_tag('welcome')) %>
+<% provide(:specific_css, stylesheet_link_tag('index')) %>
 <h1>Yuchen Zhou</h1>
 <h2>(周宇辰)</h2>
-<div class="profile_picture_container">
-	<div class="row">
+<h3>Which Yuchen would you like to see?</h3>
+<div class="profile_picture_container margTop">
+	<div class="row vertical-align">
         <div class="col-xs-5">
-			<%= image_tag("profile.jpg", :class => "img-responsive")%>
+			<%= link_to(image_tag("work.jpg", :class => "img-responsive", :onmouseover => "this.src='assets/work_hover.jpg'", :onmouseout => "this.src='assets/work.jpg'"), research_path) %>
         </div>
         <div class="col-xs-2">
-            
+            <p style="text-align:center; font-size:30px;">or?</p>
         </div>
         <div class="col-xs-5">
-			<%= image_tag("life.jpg", :class => "img-responsive")%>
+			<%= link_to(image_tag("life.jpg", :class => "img-responsive", :onmouseover => "this.src='assets/life_hover.jpg'", :onmouseout => "this.src='assets/life.jpg'"),life_path) %>
         </div>
     </div>
 </div>

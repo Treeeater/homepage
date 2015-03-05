@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'about', to: 'welcome#about'
   get 'jobapp', to: 'welcome#jobapp'
   get 'research', to: 'welcome#research'
+  get 'life', to: 'welcome#life'
   get 'contact', to: 'welcome#contact'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
