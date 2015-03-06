@@ -8,9 +8,9 @@
   <%= specfic_css(yield(:specific_css)) %>
 </head>
 <body>
+  <%= render 'layouts/header' %>
   <% conditional_wrapper(has_sidebar, :id=>"wrapper") do %>
     <div class="container">
-      <%= render 'layouts/header' %>
       <%= if (has_sidebar) then render "#{params[:controller]}/left_sidebar" end %>
       <%= yield %>
       <%= render 'layouts/footer' %>
@@ -19,8 +19,8 @@
   <% if (has_sidebar) %>
     <script>
       $("#menu-toggle").click(function(e) {
-      e.preventDefault();
-      $("#wrapper").toggleClass("toggled");
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
       });
     </script>
   <% end %>

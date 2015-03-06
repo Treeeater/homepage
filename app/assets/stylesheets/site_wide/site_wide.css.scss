@@ -59,14 +59,30 @@ div.entry{
   width: 80%;
   margin: 50px auto;
   border-bottom: 1px solid black;
-  .textBlock{
-    width: 90%;
-    margin: auto;
-    p {
-      text-indent: 20px;
-    }
-    p.noindent {
-      text-indent: 0;
+  
+}
+
+div.singleEntry{
+  padding-bottom: 30px;
+  width: 80%;
+  margin: 50px auto;
+}
+
+div.textBlock{
+  width: 90%;
+  margin: auto;
+  p {
+    text-indent: 20px;
+  }
+  p.noindent {
+    text-indent: 0;
+  }
+  ul{
+    margin-left: -30px;
+    list-style-type: none;
+    div{
+      font-size: 200%;
+      margin-bottom: 20px;
     }
   }
 }
@@ -80,12 +96,16 @@ div.contactContainer{
   }
 }
 
-.img-responsive {
+img.img-responsive {
     margin: 0 auto;
-}
-
-img.medium_img{
-  width: 450px;
+    &.medium_img{
+      margin: 50px auto;
+      width: 450px;
+    }
+    &.large_img{
+      width: 80%;
+      margin: 50px auto;
+    }
 }
 
 h3{
