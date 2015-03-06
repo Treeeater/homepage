@@ -1,16 +1,16 @@
 <% provide(:title, "Contact") %>
 <div class="contactContainer">
-<h1>Contact Information</h1>
-<p style="text-align: center; margin-bottom: 50px;"> (Please enable JavaScript) </p>
-<p>Cell: <br/><span id="cell">Mouse over to see</span></p>
-<p>Email: <br/><span id="email1">Mouse over to see</span></p>
-<p>Email (alternative): <br/><span id="email2">Mouse over to see</span></p>
-<script>
-	var a = 1223;
-	var b = 2225;
-	a += b;
-	$("#cell").on("mouseover", function(){$(this).text("434-" + "466-" + a.toString());});
-	$("#email1").on("mouseover", function(){$(this).text("first name at vir" + "ginia dot edu");});
-	$("#email2").on("mouseover", function(){$(this).text("pink" + "forpeace at gm" + "ail do" + "t com");});
-</script>
+	<h1>Contact Information</h1>
+	<p style="text-align: center; margin-bottom: 50px;"> (Please enable JavaScript) </p>
+	<p>Cell: <br/><span id="cell">Mouse over to see</span></p>
+	<p>Email: <br/><span id="email1">Mouse over to see</span></p>
+	<p>Email (alternative): <br/><span id="email2">Mouse over to see</span></p>
+	<script>
+		var a = 1223;
+		var b = 2225;
+		a += b;
+		$("#cell").on("mouseover", function(){$(this).text("434-" + "466-" + a.toString());});
+		$("#email1").on("mouseover", function(){$(this).text("first name at vir" + "ginia dot edu");});
+		$("#email2").on("mouseover", function(){$(this).text("pink" + "forpeace at gm" + "ail do" + "t com");});
+	</script>
 </div>
