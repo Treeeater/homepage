@@ -6,13 +6,13 @@
 	<div class="profile_picture_container margTop">
 		<div class="row vertical-align">
 	        <div class="col-xs-5">
-				<%= link_to(image_tag("work.jpg", :class => "img-responsive", :onmouseover => "this.src='assets/work_hover.jpg'", :onmouseout => "this.src='assets/work.jpg'"), research_path) %>
+				<%= link_to(image_tag("work.jpg", :class => "img-responsive", :onmouseover => "this.src='" + asset_path('work_hover.jpg') + "'", :onmouseout => "this.src='" + asset_path('work.jpg') + "'"), research_path) %>
 	        </div>
 	        <div class="col-xs-2">
 	            <p style="text-align:center; font-size:30px;">or?</p>
 	        </div>
 	        <div class="col-xs-5">
-				<%= link_to(image_tag("life.jpg", :class => "img-responsive", :onmouseover => "this.src='assets/life_hover.jpg'", :onmouseout => "this.src='assets/life.jpg'"),life_path) %>
+				<%= link_to(image_tag("life.jpg", :class => "img-responsive", :onmouseover => "this.src='" + asset_path('life_hover.jpg') + "'", :onmouseout => "this.src='" + asset_path('life.jpg') + "'"),life_path) %>
 	        </div>
 	    </div>
 	</div>
