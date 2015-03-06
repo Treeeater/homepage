@@ -1,0 +1,72 @@
+<% provide(:title, "Research") %>
+<div id="page-content-wrapper">
+	<%= render "research/work_intro" %>
+
+	<div class="entry">
+		<h3><%= link_to "Understanding and Monitoring Embedded Web Scripts", research_fireinspector_path %></h3>
+		<%= image_tag "research/fireinspector/overview.png", :class => "img-responsive medium_img"%>
+		<p class="imageCaption"> FireInspector workflow overview </p>
+		<div class="textBlock">
+			<p>The FireInspector project helps web developers understand and monitor the behavior of embedded third-party JavaScripts on their websites.</p>
+			<p>Our paper is accepted at Oakland (IEEE S&P) 2015', and more information can be found <%= link_to "here", research_fireinspector_path %>.</p>
+		</div>
+	</div>
+
+	<div class="entry">
+		<h3><%= link_to "SSOScan: Automated Testing of Web Applications for Single Sign-On Vulnerabilities", research_ssoscan_path %></h3>
+		<%= image_tag "research/ssoscan/systemStructure.png", :class => "img-responsive medium_img"%>
+		<p class="imageCaption"> SSOScan workflow overview </p>
+		<div class="textBlock">
+			<p>SSOScan is an automated scanner of web applications for Single Sign-On vulnerabilities.  Our paper is published at the 23rd USENIX Security Symoposium (2014), and more details can be found <%= link_to "here", research_ssoscan_path %>.</p>
+		</div>
+	</div>
+
+	<div class="entry">
+		<h3><%= link_to "Explicating SDKs: Uncovering Assumptions Underlying Secure Authentication and Authorization", research_explication_path %></h3>
+		<%= image_tag "research/explication/generalApproach.png", :class => "img-responsive medium_img"%>
+		<p class="imageCaption"> Explication process overview </p>
+		<div class="textBlock">
+			<p>The goal of Explicating SDKs project is to systematically uncover implicit assumptions that are important to applications' security properties, this work is published at the 22nd USENIX Security Symposium (2013).  I did this project while I interned at Microsoft Research, and I had the great honor to work with two excellent researchers Shuo Chen (my mentor) and Rui Wang (my co-first author).  For more information, please click <%= link_to "here", research_explication_path %>.</p>
+		</div>
+	</div>
+
+	<div class="entry">
+		<h3><%= link_to "DOMinator: Protecting Private Web Content from Embedded Scripts", research_esorics_path %></h3>
+		<%= image_tag "research/esorics/DOM.png", :class => "img-responsive medium_img"%>
+		<p class="imageCaption"> DOMinator workflow overview </p>
+		<div class="textBlock">
+			<p>The goal of DOMinator is to build a browser that can enforce fine-grained access control policies for third-party JavaScripts.  This work is published at ESORICS 11'.</p>
+			<p> Find more about this project <%= link_to "here", research_esorics_path %>.</p>
+		</div>
+	</div>
+
+	<div class="entry">
+		<h3><%= link_to "Why Aren't HTTP-only Cookies More Widely Deployed?", research_httponly_path %></h3>
+		<%= image_tag "research/httponly/http-only.png", :class => "img-responsive medium_img"%>
+		<p class="imageCaption"> HTTP-only Cookies deployment chronology </p>
+		<div class="textBlock">
+			<p>This short paper is presented at W2SP 10' (co-hosted with Oakland 10'), and I looked at the history and current status of how well HTTP-only cookies are deployed, and give some suggestions about how future security works can improve themselves to achieve a higher deploy rate.</p>
+			<p> Find more about this project <%= link_to "here", research_httponly_path %>.</p>
+		</div>
+	</div>
+
+	<div class="entry">
+		<h3><%= link_to "Poster: RedactDOM", research_redactdom_path %></h3>
+		<%= image_tag "research/redactdom/redactDOM.png", :class => "img-responsive medium_img"%>
+		<p class="imageCaption"> RedactDOM workflow </p>
+		<div class="textBlock">
+			<p>The goal of RedactDOM project is to prevent sensitive data leaking through embedded scripts, and we (with Longze Chen) presented the poster in IEEE S&amp;P (Oakland) 13'.</p>
+			<p> Find more about this project <%= link_to "here", research_redactdom_path %>.</p>
+		</div>
+	</div>
+
+	<div class="entry">
+		<h3><%= link_to "Poster: Unifying Data Policies Across the Client and Server", research_unifying_path %></h3>
+		<%= image_tag "research/unifying/unifying_policies.png", :class => "img-responsive medium_img"%>
+		<p class="imageCaption"> Poster Snapshot </p>
+		<div class="textBlock">
+			<p> <a href="http://jburket.com/">Jonathan Burket</a> and I presented this poster at USENIX 11'; the idea is to generate annotated privacy policies automatically from server-side using <a href="http://jburket.com/GuardRails.pdf">GuardRails</a>, and enforce the access control policies at client side using the <%= link_to "DOMinator", research_esorics_path %>.</p>
+		</div>
+	</div>
+
+</div>

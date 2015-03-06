@@ -1,0 +1,39 @@
+<div id="sidebar-wrapper">
+	<ul class="sidebar-nav">
+		<li class="sidebar-brand">
+			Research
+		</li>
+		<li>
+			<%= link_to "Overview", research_path, :id => "index"%>
+		</li>
+		<li>
+			<%= link_to "FireInspector", research_fireinspector_path, :id => "fireinspector" %>
+		</li>
+		<li>
+			<%= link_to "SSOScan", research_ssoscan_path, :id => "ssoscan" %>
+		</li>
+		<li>
+			<%= link_to "Explication", research_explication_path, :id => "explication" %>
+		</li>
+		<li>
+			<%= link_to "ESORICS", research_esorics_path, :id => "esorics" %>
+		</li>
+		<li>
+			<%= link_to "HTTP-Only Cookies", research_httponly_path, :id => "httponly" %>
+		</li>
+		<li>
+			<%= link_to "Poster: RedactDOM", research_redactdom_path, :id => "redactdom" %>
+		</li>
+		<li>
+			<%= link_to "Poster: Unifying Policies", research_unifying_path, :id => "unifying" %>
+		</li>
+		<li>
+			<a href="#" id = "Earlier">Earlier Projects</a>
+		</li>
+	</ul>
+</div>
+<script>
+	var activeSelection = "<%= params[:action] %>";
+	$("#"+activeSelection).addClass("selected");
+	$("#"+activeSelection).attr("href", "#");
+</script>

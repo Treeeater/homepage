@@ -1,8 +1,16 @@
 Rails.application.routes.draw do
+
   get 'index', to: 'welcome#index'
   get 'about', to: 'welcome#about'
   get 'jobapp', to: 'welcome#jobapp'
-  get 'research', to: 'welcome#research'
+  get 'research', to: 'research#index'
+  get 'research_fireinspector', to: 'research#fireinspector'
+  get 'research_ssoscan', to: 'research#ssoscan'
+  get 'research_explication', to: 'research#explication'
+  get 'research_esorics', to: 'research#esorics'
+  get 'research_httponly', to: 'research#httponly'
+  get 'research_redactdom', to: 'research#redactdom'
+  get 'research_unifying', to: 'research#unifying'
   get 'life', to: 'welcome#life'
   get 'contact', to: 'welcome#contact'
   # The priority is based upon order of creation: first created -> highest priority.
