@@ -1,0 +1,32 @@
+<% provide(:title, "Research") %>
+<div class="singleEntry">
+	<h1 style="font-size:3em;">SSOScan: Automated Testing of Web Applications for Single Sign-On Vulnerabilities</h1>
+	<%= image_tag "research/ssoscan/systemStructure.png", :class => "img-responsive large_img"%>
+	<div class="textBlock">
+		<ul>
+			<li>
+				<div>Introduction</div>
+				<p>Correctly integrating third-party services is challenging, and mistakes are dangerous when third-party services are used for security-critical tasks such as authentication and authorization. Previous works have shown that developers frequently misunderstand integration requirements and make critical mistakes in their implementations. Since traditional programming techniques are hard to apply to programs running inside black-box web servers, we propose to detect vulnerabilities based on probing behaviors of the system. In this work we describe the design and implementation of SSOScan, an automatic vulnerability checker for applications using <a href="http://en.wikipedia.org/wiki/Single_sign-on">Single Sign-On (SSO)</a> systems.
+				</p>
+				<%= link_to((image_tag "research/ssoscan/result.png", :class => "img-responsive", :style => "margin-top:30px;"), asset_path("research/ssoscan/result.png"))%>
+				<div style="font-size:1em; margin: 20px auto 30px auto; text-align: center;">Vulnerability rate and Facebook SSO integration popularity, click for larger picture</div>
+				<p>We study the top-ranked 20,000 sites for five different vulnerabilities in their implementation of Facebook SSO. Of the 1660 sites in our study that provide Facebook SSO functionality, 20.8% (345) of them have at least one critical vulnerability detected by our analysis. 
+				</p>
+				<p>SSOScan is able to scan 80% of the top 10,000 websites using Facebook SSO fully automatically; to understand its failures, we manually analyzed all of the sites that could not be automatically tested.  We explain the reasons why SSOScan fail in certain scenarios, and analyze click data on the top 10,000 websites to improve the search heuristics.
+				</p>
+			</li>
+			<li>
+				<div>Take SSOScan for a spin!</div>
+				<p>We implemented a web service that enables developers to submit URLs to websites that integrate Facebook Single Sign-On to check for potential vulnerabilities.  Check out this service <%= link_to "here", "http://www.ssoscan.org" %>! (Due to computation limitations on the hosting server, SSOScan is hosted on another dedicated machine and domain.)</p>
+			</li>
+			<li>
+				<div>Source Code</div>
+				<p>SSOScan is open source and the package can be downloaded <a href="https://github.com/Treeeater/vulCheckerFirefox">here</a>. Please follow instructions on the GitHub README page for more details.</p>
+			</li>
+			<li>
+				<div>Paper</div>
+				<p>Our paper is published at the 23rd USENIX Security Symposium (2014) and a full PDF version can be found <%= link_to "here", asset_path("SSOScan.pdf") %>, and the technical report with more implementation details in the appendix can be found <%= link_to "here", asset_path("SSOScan_TR.pdf") %>.</p>
+			</li>
+		</ul>
+	</div>
+</div>
