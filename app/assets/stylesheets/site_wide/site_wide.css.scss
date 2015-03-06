@@ -49,6 +49,11 @@ div.margTop{
   margin-top:40px;
 }
 
+div.margTopBot{
+  margin-top:40px;
+  margin-bottom:40px;
+}
+
 div.entry{
   padding-bottom: 30px;
   width: 80%;
@@ -60,6 +65,18 @@ div.entry{
     p {
       text-indent: 20px;
     }
+    p.noindent {
+      text-indent: 0;
+    }
+  }
+}
+
+div.contactContainer{
+  margin: 50px auto 50px auto;
+  width: 60%;
+  span{
+    text-indent: 20px;
+    display:inline-block;
   }
 }
 
@@ -83,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 4em;
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
