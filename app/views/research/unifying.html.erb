@@ -1,1 +1,31 @@
 <% provide(:title, "Research") %>
+<div class="singleEntry">
+	<h1 style="font-size:3em;">Unifying Data Policies Across the Client and Server</h1>
+	<h2>Jonathan Burket, Jenny Cha, Austin DeVinney, Casey Mihaloew, Yuchen Zhou, David Evans</h2>
+	<h2>University of Virginia</h2>
+	<h3><a href="https://www.usenix.org/legacy/events/sec11/">Poster presented at USENIX Security 2011</a></h3>
+	<%= image_tag "research/unifying/unifying_policies.png", :class => "img-responsive large_img"%>
+	<div class="textBlock">
+		<ul>
+			<li>
+				<div>Introduction</div>
+				<p> Web application frameworks have greatly simplified web application development. Securing these applications, however, can still be difficult. A single mistake in a single line of code is often enough to leave a site vulnerable to attack. Earlier this year, we published GuardRails, a tool that helps secure Ruby on Rails applications by attaching security policies directly to sensitive data. These policies are currently enforced only on the server-side of the application, and while they successfully protect against a variety of access control and injection attack vulnerabilities, they do not easily integrate with the user interface and offer no client-side security. Our current work focuses on bridging the gap between the server and client side, such that a single set of security policies are enforced uniformly throughout the application. In this poster, we will demonstrate how this integration of policies on the server and client can be used to easily control what content can be accessed by untrusted scripts.
+				</p>
+			</li>
+			<li>
+				<div>Connection with <a href="http://www.jburket.com/GuardRails.pdf">GuardRails</a></div>
+				<p>
+					Developed by <a href="http://www.jburket.com">Jonathan Burket</a> et al., GuardRails is a source-to-source tool for Ruby on Rails that helps developers build secure web applications. GuardRails works by attaching security policies defined using annotations to the data model itself. GuardRails produces a version of the input application that automatically enforces the specified policies. GuardRails helps developers prevent a myriad of security problems including cross-site scripting attacks and access control violations while providing a large degree of flexibility to support a range of policies and development styles.
+				</p>
+				<p> This poster proposes to integrate <%= link_to "my ESORICS work", research_esorics_path%> (modified Chromium browser that may enforce access control policies on client-side, but requires server to provide those cumbersome policies) with GuardRails, a server side framework that can automatically generate the policies based on simple developers' annotations.
+				</p>
+			</li>
+			<li>
+				<div><%= link_to "Poster Abstract", asset_path("unifying_Abstract.pdf") %></div>
+			</li>
+			<li>
+				<div><%= link_to "Full Poster PDF", asset_path("unifying_Poster.pdf") %></div>
+			</li>
+		</ul>
+	</div>
+</div>
