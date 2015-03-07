@@ -1,1 +1,37 @@
 <% provide(:title, "Research") %>
+<div class="singleEntry">
+	<h1 style="font-size:3em;">Explicating SDKs: Uncovering Assumptions Underlying Secure Authentication and Authorization</h1>
+	<h2>Rui Wang<sup>1</sup>*, Yuchen Zhou<sup>2</sup>*,<br/> Shuo Chen<sup>1</sup>, Shaz Qadeer<sup>1</sup>, David Evans<sup>2</sup> and Yuri Gurevich<sup>1</sup><br/>(*Co-first authors)</h2>
+	<h2><sup>1</sup>Microsoft Research and <sup>2</sup>University of Virginia</h2>
+	<h3><a href="https://www.usenix.org/conference/usenixsecurity13">USENIX Security Symposium 2013</a></h3>
+	<%= image_tag "research/explication/generalApproach.png", :class => "img-responsive large_img"%>
+	<div class="textBlock">
+		<ul>
+			<li>
+				<div>Introduction</div>
+				<p>Security vulnerabilities often emerges because some implicit assumptions are missed by the application developers.  The main goal of this project is to secure web/mobile applications integrating third-party services, in particular, <a href="http://en.wikipedia.org/wiki/Single_sign-on">Single-Sign On(SSO)</a> services by uncovering implicit security-critical assumptions required by the service provider.  
+				</p>
+				<p>The idea is to use symbolic execution engine as a verifier to assist researchers study system behavior and gain insights.  As the above flowgraph describes, we approach this problem using an iterative approach - starting with an initial model of the system with an initial set of assumptions and assertions, the verifier tries to reason about the model and outputs counterexamples for the assertions.  We manually inspect the counterexamples and try to find real-world vulnerabilities which map to them.
+				</p>
+				<p>Two lead authors spent a total of 6 months to explicate three SDKs and uncovered dozens of implicit assumptions.  We reported our findings to related parties and got acknowledgements and bug bounties from them.  We also checked popular applications against these vulnerabilities and found that the majority of the applications missed at least one of the assumptions.
+				</p>
+				<%= image_tag "research/explication/SSOArchitecture.png", :class => "img-responsive", :style => "margin-top:30px;"%>
+				<div style="font-size:1em; margin: 20px auto 30px auto; text-align: center;">Single-Sign On system architecture and threat model</div>
+			</li>
+			<li>
+				<div>Model</div>
+				<p>The models of explicated SDKs can be found at our <a href="https://github.com/sdk-security/Explicated-SDKs">Github repository</a>.  You can find instructions on how to run the model inside the repository README.</p>
+			</li>
+			<li>
+				<div>Real-World Impact</div>
+				<p><b>Facebook awarded us with three bug bounties, each of which ($1500) is three times the basic bounty amount ($500).  We donated all money to charity, and Facebook matched our donations 1-to-1, making the total donation amount $9000.</b></p>
+				<p>Microsoft Live Connect team also updated their developer's guide to reflect our findings.  OAuth working group added a paragraph in the security consideration sections according to our suggestion.</p>
+				<p>Various application developers thanked us for informing them of their application's vulnerabilities.</p>
+			</li>
+			<li>
+				<div>Paper</div>
+				<p>Our <a href="https://www.usenix.org/conference/usenixsecurity13">USENIX Sec 13'</a> paper can be found at <%= link_to "here", asset_path("ExplicatingSDKs-final.pdf")%>.</p>
+			</li>
+		</ul>
+	</div>
+</div>

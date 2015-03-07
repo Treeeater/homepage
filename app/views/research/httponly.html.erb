@@ -1,1 +1,21 @@
 <% provide(:title, "Research") %>
+<div class="singleEntry">
+	<h1 style="font-size:3em;">Why Aren't HTTP-only Cookies More Widely Deployed?</h1>
+	<h2>Yuchen Zhou and David Evans</h2>
+	<h2>University of Virginia</h2>
+	<h3><a href="http://w2spconf.com/2010/">Web 2.0 Security and Privacy</a> (W2SP 2010)</h3>
+	<%= image_tag "research/httponly/http-only.png", :class => "img-responsive large_img"%>
+	<div class="textBlock">
+		<ul>
+			<li>
+				<div>Introduction</div>
+				<p>HTTP-only cookies were introduced eight years ago as a simple way to prevent cookie-stealing through cross-site scripting attacks. Adopting HTTP-only cookies seems to be an easy task with no significant costs or drawbacks, but many major websites still do not use HTTP-only cookies. This paper reports on a survey of HTTP-only cookie use in popular websites, and considers reasons why HTTP-only cookies are not yet more widely deployed.
+				</p>
+			</li>
+			<li>
+				<div>Paper</div>
+				<p>Full paper (5 pages): <%= link_to "PDF", asset_path("http-only.pdf") %></p>
+			</li>
+		</ul>
+	</div>
+</div>
