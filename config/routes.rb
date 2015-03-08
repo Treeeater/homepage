@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
 
   get 'index', to: 'welcome#index'
-  get 'about', to: 'welcome#about'
   get 'jobapp', to: 'welcome#jobapp'
+  get 'contact', to: 'welcome#contact'
+
   get 'research', to: 'research#index'
   get 'research_fireinspector', to: 'research#fireinspector'
   get 'research_ssoscan', to: 'research#ssoscan'
@@ -11,8 +12,14 @@ Rails.application.routes.draw do
   get 'research_httponly', to: 'research#httponly'
   get 'research_redactdom', to: 'research#redactdom'
   get 'research_unifying', to: 'research#unifying'
-  get 'life', to: 'welcome#life'
-  get 'contact', to: 'welcome#contact'
+
+  get 'life', to: 'life#index'
+  get 'life_family', to: 'life#family'
+  get 'life_edu', to: 'life#edu'
+  get 'life_sports', to: 'life#sports'
+  get 'life_tcg', to: 'life#tcg'
+  get 'life_travel', to: 'life#travel'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -16,7 +16,7 @@ module ApplicationHelper
 		end
     end
     def has_sidebar()
-    	if (params[:controller] == "research")
+    	if (params[:controller] == "research" || params[:controller] == "life")
     		return true
     	end
     	return false

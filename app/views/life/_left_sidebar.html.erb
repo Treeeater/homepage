@@ -1,0 +1,30 @@
+<div id="sidebar-wrapper">
+	<ul class="sidebar-nav">
+		<li class="sidebar-brand">
+			Yuchen Zhou
+		</li>
+		<li>
+			<%= link_to "Me", life_path, :id => "index"%>
+		</li>
+		<li>
+			<%= link_to "Education", life_edu_path, :id => "edu" %>
+		</li>
+		<li>
+			<%= link_to "Travel Fan", life_travel_path, :id => "travel" %>
+		</li>
+		<li>
+			<%= link_to "Sports Fan", life_sports_path, :id => "sports" %>
+		</li>
+		<li>
+			<%= link_to "TCG Fan", life_tcg_path, :id => "tcg" %>
+		</li>
+		<!--<li>
+			<a href="#" id = "Earlier">Earlier Projects</a>
+		</li>-->
+	</ul>
+</div>
+<script>
+	var activeSelection = "<%= params[:action] %>";
+	$("#"+activeSelection).addClass("selected");
+	$("#"+activeSelection).attr("href", "#");
+</script>
