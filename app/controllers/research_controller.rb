@@ -1,7 +1,7 @@
 class ResearchController < ApplicationController
   def index
   end
-  def fireinspector
+  def scriptinspector
   end
   def ssoscan
   end

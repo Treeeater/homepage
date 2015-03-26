@@ -1,0 +1,26 @@
+<% provide(:title, "Research") %>
+<div class="singleEntry">
+	<h1 style="font-size:3em;">Understanding and Monitoring Embedded Web Scripts</h1>
+	<h2>Yuchen Zhou and David Evans</h2>
+	<h2>University of Virginia</h2>
+	<h3><a href="http://www.ieee-security.org/TC/SP2015/">IEEE Symposium on Security and Privacy</a> (Oakland 15')</h3>
+	<%= image_tag "research/scriptinspector/overview.png", :class => "img-responsive large_img"%>
+	<div class="textBlock">
+		<ul>
+			<li>
+				<div>Introduction</div>
+				<p>Modern web applications make frequent use of third-party scripts, often in ways that allow scripts loaded from external servers to make unrestricted changes to the embedding page and access citical resources including private user information.  This paper describes tools we developed to assist site administrators in understanding, monitoring, and restricting the behavior of third-party scripts embedded in their site. We developed <em>ScriptInspector</em>, a modified browser that can intercept, record, and check third-party script accesses to critical resources against security policies, along with a <em>Visualizer</em> tool that allows users to conveniently view recorded script behaviors and candidate policies and a <em>PolicyGenerator</em> tool that aids script providers and site administrators in writing policies.  Site administrators can manually refine these policies with minimal effort to produce policies that effectively and robustly limit the behavior of embedded scripts.  <em>PolicyGenerator</em> is able to generate effective policies for all scripts embedded on 72 out of the 100 test sites with minor human assistance.  In this paper, we present the designs of our tools, report on what we've learned about script behaviors using them, evaluate the value of our approach for website administrator.
+				</p>
+			</li>
+			<li>
+				<div>Downloads</div>
+				<p>ScriptInspector and PolicyGenerator can be downloaded <a href="https://github.com/Treeeater/JSAccessVisualizer">here</a>. Please follow instructions on the GitHub README page for more details.</p>
+			</li>
+			<li>
+				<div>Paper</div>
+				<p>Our paper is to appear at IEEE S&amp;P (Oakland) 2015, to be held at San Jose.  Please click <%= link_to "here", asset_path("Oakland2015.pdf") %> to download the paper.  If you have any questions, don't hesitate to email me.</p>
+				<p>In the paper, we referred readers to this website for a complete list of URLs that we constructed policies for. Please click <%= link_to "here", asset_path("ScriptInspector_sites.pdf") %> to see. </p>
+			</li>
+		</ul>
+	</div>
+</div>
