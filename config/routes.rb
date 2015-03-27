@@ -19,7 +19,12 @@ Rails.application.routes.draw do
   get 'life_sports', to: 'life#sports'
   get 'life_tcg', to: 'life#tcg'
   get 'life_travel', to: 'life#travel'
-
+  get '/', to: 'research#scriptinspector', constraints: { host: 'scriptinspector.org' } 
+=begin
+  namespace :scriptinspector, path: '/', constraints: { subdomain: 'scriptinspector' }  do
+    get '/', to: 'research#scriptinspector'
+  end
+=end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
