@@ -8,7 +8,7 @@
   <%= specfic_css(yield(:specific_css)) %>
 </head>
 <body>
-  <%= render 'layouts/header' %>
+  <%= if (is_Yuchen_homepage) then render 'layouts/header' end %>
   <% conditional_wrapper(has_sidebar, :id=>"wrapper") do %>
     <div class="container">
       <%= if (has_sidebar) then render "#{params[:controller]}/left_sidebar" end %>

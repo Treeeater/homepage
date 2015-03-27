@@ -1,3 +1,5 @@
+require 'socket'
+
 module ApplicationHelper
     def full_title(page_title = '')
 		base_title = "Yuchen's Home"
@@ -6,6 +8,9 @@ module ApplicationHelper
 		else
 		    "#{page_title} | #{base_title}"
 		end
+    end
+    def is_Yuchen_homepage()
+	if (request.host == "scriptinspector.org") then return false else return true end
     end
     def specfic_css(arg = '')
 		base_css = ""
@@ -17,7 +22,7 @@ module ApplicationHelper
     end
     def has_sidebar()
     	if (params[:controller] == "research" || params[:controller] == "life")
-    		return true
+    		return is_Yuchen_homepage()
     	end
     	return false
     end
