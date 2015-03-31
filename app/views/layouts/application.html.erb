@@ -6,6 +6,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <%= specfic_css(yield(:specific_css)) %>
+  <%= favicon_link_tag 'favicon.ico' %>
 </head>
 <body>
   <%= if (is_Yuchen_homepage) then render 'layouts/header' end %>
