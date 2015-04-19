@@ -1,6 +1,10 @@
 class ResearchController < ApplicationController
   def index
   end
+  def awards
+  end
+  def services
+  end
   def scriptinspector
   end
   def ssoscan

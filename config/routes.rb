@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get 'contact', to: 'welcome#contact'
 
   get 'research', to: 'research#index'
+  get 'research_awards', to: 'research#awards'
+  get 'research_services', to: 'research#services'
   get 'research_scriptinspector', to: 'research#scriptinspector'
   get 'research_ssoscan', to: 'research#ssoscan'
   get 'research_explication', to: 'research#explication'
