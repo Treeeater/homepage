@@ -10,7 +10,8 @@ module ApplicationHelper
 		end
     end
     def is_Yuchen_homepage()
-	if (request.host == "scriptinspector.org") then return false else return true end
+	if (request.env["SERVER_NAME"].match("scriptinspector.org")) then return false else return true end
+	#if (request.host == "scriptinspector.org") then return false else return true end
     end
     def specfic_css(arg = '')
 		base_css = ""
