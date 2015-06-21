@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   get 'life_tcg', to: 'life#tcg'
   get 'life_travel', to: 'life#travel'
   get '/', to: 'research#scriptinspector', constraints: { host: 'scriptinspector.org' } 
+  get '/', to: 'research#scriptinspector', constraints: { host: 'scriptinspector.org', subdomain: 'www'} 
 =begin
   namespace :scriptinspector, path: '/', constraints: { subdomain: 'scriptinspector' }  do
     get '/', to: 'research#scriptinspector'
